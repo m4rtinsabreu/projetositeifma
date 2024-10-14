@@ -19,11 +19,23 @@
         </nav>
     </header>
     <section id="home">
-        <div class="banner">
-            <img src="img/inscricoes.jpg" alt="Destaque 1">
-            
-           
-        </div>
+      <button id="toggleButton">Mostrar Conteúdo</button>
+    <div id="content">
+        <img src="img/inscricoes.jpg" alt="Destaque 1">
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const content = document.getElementById('content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                this.textContent = 'Esconder Conteúdo';
+            } else {
+                content.style.display = 'none';
+                this.textContent = 'Mostrar Conteúdo';
+            }
+        });
+    </script>
         <div class="noticias">
             <h2>Campus Coelho Neto inaugura quadra poliesportiva.</h2>
             <img src="img/quadra.jpg" alt="Quadra">
