@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTITUTO FEDERAL DO MARANHÃO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logoifma.png" alt="Logo IFMA">
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="relatos.html">Relatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="banner">
+            <img src="img/inscricoes.jpg" alt="Destaque 1">
+            
+           
+        </div>
+        <div class="noticias">
+            <h2>Campus Coelho Neto inaugura quadra poliesportiva.</h2>
+            <img src="img/quadra.jpg" alt="Quadra">
+
+            <p>A quadra esportiva de Coelho Neto é a terceira a ser entregue das 12 quadras 
+                poliesportivas previstas para 2024, com
+                investimentos por volta de R$15 milhões.</p>
+            <h2>Campus Coelho Neto outorga grau a primeira turma do Curso Superior de
+                Administração.</h2>
+                <img src="img/adm.jpg" alt="ADM">
+
+            <p>A solenidade ocorreu na noite desta terça-feira (19), no auditório do IFMA</p>
+            <h2>IFMA oferta curso de Empreendedorismo para mulheres com fragilidade social em Coelho Neto.</h2>
+            <img src="img/curso.jpg" alt="Curso">
+
+            <p>A ação integra o Programa Mulheres com um total de 1.050 vagas em todo o Maranhão.</p>
+            <h2>Ideathon: Campus Coelho Neto realiza evento de inovação</h2>
+            <img src="img/ideathon.jpg" alt="Ideathon">
+            <p>Durante três dias, estudantes do município participaram de atividades sobre ideias e soluções criativas.</p>
+
+        
+        </div>
+  
+
+        <div class="midia-social">
+            <h2>Conecte-se com o IFMA</h2>
+            <ul>
+                <li><a href="https://portal.ifma.edu.br/aluno/"target="_blank">Portal do Aluno</a></li>
+                <li><a href="https://www.instagram.com/ifmacoelhoneto/" target="_blank">Instagram</a></li>
+               
+                <li><a href="calendario.pdf" target="_blank">Calendário Acadêmico</a></li>
+            </ul>
+        </div>
+       <div class="Contatos">
+        <h2>- Informações de Contato: Telefones, e-mails e horários de atendimento.
+        </h2>
+        <h3>Diretoria de Desenvolvimento Educacional – DDE</h3>
+        <p>•Departamento de Ensino – DE:</p>
+        <p>•Chefe: Rivânia da Silva Lira</p>
+        <p>•E-mail: de.coelhoneto@ifma.edu.br</p>
+        <p>•Telefone: (99) 98114-6779</p>
+        <h3>•Departamento de Pesquisa, Pós-Graduação e Inovação – DPPGI:</h3>
+        <p>Chefe: Ana Rayonara de Sousa Albuquerque</p>
+        <p>E-mail: dppgi.coelhoneto@ifma.edu.br</p>
+        <p>Telefone: (86) 99974-1958</p>
+        <h3>•Departamento de Registro e Controle Acadêmico – DRCA:</h3>
+        <p>Chefe: Gasparry Franciolle Silva do Nascimento</p>
+        <p>E-mail: drca.coelhoneto@ifma.edu.br</p>
+        <p>Telefone: (99) 98135-6453</p>
+        
+        <h3>•Coordenadoria de Assuntos Estudantis – CAE:</h3>
+        <p>Coordenadora: Joana Célia Ferreira Moura</p>
+        <p>E-mail: cae.coelhoneto@ifma.edu.br</p>
+        <p>Telefone: (98) 97021-9311</p>
+        <h3>•Coordenação do Curso Técnico de 
+
+            Informática – CCTI:</h3>
+        
+        <p>E-mail: ccti.coelhoneto@ifma.edu.br</p>
+        <p>Telefone: (86) 99995-3106</p>
+        <h3>•Coordenação do Curso Técnico em Administração – CCTA:
+        </h3>
+        <p>Coordenador: Hosana Maria da Silva Sousa
+        </p>
+        <p>E-mail: cctadm.coelhoneto@ifma.edu.br</p>
+        <h3>•Coordenação do Curso Técnico de Automação Industrial – CCAI:
+        </h3>
+        <p>Coordenador: Ana Caroline Meireles Soares
+        </p>
+        <p>E-mail: ccai.coelhoneto@ifma.edu.br</p>
+        <p>Telefone: (98) 98829-4664</p>
+        <h2>- Horário de funcionamento
+
+        </h2>
+        <p>Segunda-feira 07:00–22:30</p>
+        <p>Terça-feira 07:00–22:30</p>
+        <p>Quarta-feira 07:00–22:30</p>
+      
+        <p>Quinta-feira 07:00–22:30</p>
+        <p>Sexta-feira 07:00–22:30</p>
+        <p>Sábado: sábados letivos</p>
+        <p>Domingo: Fechado</p>
+      
+
+    
+    </div>
+
+    <h1>RELÓGIO</h1>
+    <p id="clock"></p>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const clock = document.getElementById('clock');
+            clock.textContent = now.toLocaleTimeString();
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); 
+    </script>
+
+    </section>
+   
+</body>
+</html>
